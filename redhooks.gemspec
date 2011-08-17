@@ -9,11 +9,14 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Carlo Miotto"]
-  s.date = %q{2011-07-30}
+  s.date = %q{2011-08-17}
   s.email = %q{support@enbilab.com}
+  s.extra_rdoc_files = [
+    "README.md"
+  ]
   s.files = [
-    "lib/engine.rb",
     "lib/redhooks.rb",
+    "lib/redhooks/engine.rb",
     "lib/redhooks/hook.rb",
     "lib/redhooks/hook/controller_helper.rb",
     "lib/redhooks/hook/listener.rb",
