@@ -35,6 +35,7 @@ module Redhooks
       
       def self.inherited(child)
         child.send(:include, ApplicationHelper)
+        super
       end
 
       # Helper method to directly render a partial using the context:
