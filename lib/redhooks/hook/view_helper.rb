@@ -33,7 +33,7 @@ module Redhooks
     module ViewHelper
       def call_hook(hook, context={})
         default_context = {:controller => controller, :request => request}
-        Redhooks::Hook.call_hook(hook, default_context.merge(context)).join(' ')
+        Redhooks::Hook.call_hook(hook, default_context.merge(context)).join(' ').html_safe
       end
     end
   end
